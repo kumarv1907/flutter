@@ -5,13 +5,22 @@ void main() => runApp(MaterialApp(
         appBar: AppBar(
           title: Text('Hello'),
           centerTitle: true,
+          backgroundColor: Colors.red[600],
         ),
         body: Center(
-          child: Text('Hey You'),
+          child: Text('hello Ninjas',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 5,
+                color: Colors.grey[600],
+                fontFamily: 'IndieFlower',
+              )),
         ),
         floatingActionButton: FloatingActionButton(
-          child: Text('Click'),
+          child: const Text('Click'),
           onPressed: () => print("FloatingActionButton Clicked"),
+          backgroundColor: Colors.red[600],
         ),
       ),
     ));
